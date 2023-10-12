@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+}
+
+@layer components {
+  /*!============================ Base ============================*/
+  /*?--------------- Button ----------------*/
+  .accounting-button {
+    @apply bg-red-600 text-white font-bold text-lg px-4 py-1 rounded-lg hover:bg-red-800 hover:scale-105 duration-300;
+  }
+  .home-nav-btn {
+    @apply text-white hover:text-red-600 hover:scale-110 duration-300;
+  }
+  .movie-btn {
+    @apply flex justify-center items-center gap-3 text-sm font-bold sm:text-xl sm:font-semibold
+     py-1 px-5 hover:scale-110 hover:bg-opacity-[0.80] rounded-lg shadow-lg duration-300;
+  }
+
+  /*!============================ Content ============================*/
+  /*?--------------- Card ----------------*/
+  .card-svg svg {
+    @apply hover:text-zinc-500 duration-300;
+  }
+  .slider-arrow {
+    @apply absolute top-12 z-50 text-4xl h-full w-12 text-white hover:text-zinc-600 duration-300 ease-in-out;
+  }
+}
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
